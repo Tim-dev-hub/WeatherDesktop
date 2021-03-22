@@ -4,29 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace WeatherDesktop
 {
     public static class User
     {
+
         public static Tim_hub.Weather.API.Weather.Coord Location
         {
             get
             {
-                
+                try
+                {
+                    var obj = JsonConvert.DeserializeObject<Tim_hub.Weather.API.Weather.Coord>(ProgramCache.GetPrefs("Location.json"));
+                    return obj;
+                }
+                catch
+                {
+                    return null;
+                }
             }
             set
             {
-                string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
-                string path = docs + "/WeatherDesktop/User/";
-                string filename = "Location.json";
-                if (!File.Exists(path + filename))
-                {
-                    Directory.CreateDirectory(path);
-                    File.Create(path + filename);
-                }
+                ProgramCache.SavePrefs("Location.json", JsonConvert.SerializeObject(value, Formatting.Indented));
             }
         }
+
     }
 }

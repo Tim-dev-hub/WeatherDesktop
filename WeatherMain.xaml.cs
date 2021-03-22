@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WeatherDesktop
 {
     /// <summary>
-    /// Логика взаимодействия для WeatherHome.xaml
+    /// Логика взаимодействия для WeatherMain.xaml
     /// </summary>
-    public partial class WeatherHome : Window
+    public partial class WeatherMain : Page
     {
-        public WeatherHome()
+        public WeatherMain()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

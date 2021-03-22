@@ -1,0 +1,146 @@
+[
+  {
+    "WallpaperFilename": "day_clear.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "01d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "02d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "03d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "04d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "09d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "10d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "11d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_snow.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "13d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "day_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "50d",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_clear.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "01n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "02n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "03n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "04n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "09n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "10n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_rain.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "11n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_snow.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "13n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  },
+  {
+    "WallpaperFilename": "night_clouds.jpg",
+    "Condition": {
+      "Operator": "==",
+      "Value": "50n",
+      "PropertyReference": "Condition[0].IconID"
+    }
+  }
+]

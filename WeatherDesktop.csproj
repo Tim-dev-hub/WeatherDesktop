@@ -46,6 +46,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.5.0.2\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -67,18 +71,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramCache.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Weather.cs" />
+    <Compile Include="WeatherMain.xaml.cs">
+      <DependentUpon>WeatherMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherPacksImplementation\WeatherPack.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WeatherMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -98,6 +112,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -108,10 +125,93 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Graphics\icons8-маркер-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="day_clear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="night_clear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="day_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="day_clouds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="day_clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\day_clear.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\day_clouds.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\day_rain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\day_snow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\night_clear.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\night_clouds.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\night_rain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WeatherPacks\WeatherDefault\night_snow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="icons8-маркер-96.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Graphics\" />
+    <Resource Include="Assets\Graphics\cloud-computing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cloud-computing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\drops.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\gauge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\wind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Graphics\10d%404x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
